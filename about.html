@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DumbYarn - About</title>
+    <link rel="stylesheet" href="about.css" /><link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="mediaqueryniherlen.css">
+    <script src="function.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <section class="about-sec">
+      <div class="back">
+        <div id="sideNav" class="side-nav">
+          <div class="side-nav-content">
+              <div class="logo-container">
+                  <img src="logo.png" alt="my logo" />
+              </div>
+              <div class="nav-links">
+                  <ul>
+                      <li class="active-link"><a href="#about" onclick="showTab('about')">About</a></li>
+                      <li><a href="#attribute" onclick="showTab('attribute')">Attributes</a></li>
+                      <li><a href="#gallery" onclick="showTab('gallery')">Gallery</a></li>
+                      <li><a href="#contact" onclick="showTab('contact')">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+          <div class="side-nav-button" id="sideNavButton">
+              >
+          </div>
+      </div>
+      
+
+
+      
+      <div class="about-content active-tab-content" id="about">
+        <div class="up-content">
+               <div class="up-con-img-sec">
+                 <img src="propic.jpg" alt="" />
+                </div>
+                <div class="up-con-text-sec">
+                <p class="text-con">
+                 Name: <span> Helen Joy Damian</span> <br />Age:
+                  <span> 20yrs old </span><br />Address:<span> Siari, Sindangan, Zamboanga del Norte</span>
+                </span
+              >
+                 <br />Date of Birth: <span> February 12, 2004</span>
+                </p>
+              </div>
+               </div>
+                <div class="down-content">
+               <div class="d-heading">Educational Background</div>
+            <div class="d-container">
+
+                <div class="primary">
+                    <h3 class="heading">Primary Education</h3>
+                    <p class="sub-heading">Siari P. Escabarte <br>Elementary School</p>
+                </div>
+                <div class="secondary">
+                    <h3 class="heading">Secondary Education</h3>
+                    <p class="sub-heading">Junior Year: <br>Siari John H. Roemer Memorial National High School
+                     <br>Senior Year: <br>Sindangan National High School</p>
+ 
+                    
+
+                </div>
+                <div class="tertiary">
+                    <h3 class="heading">Tertiary Education</h3>
+                    <p class="sub-heading">Jose Rizal Memorial State University</p>
+                </div>
+            </div>
+      
+        </div>
+      </div>
+
+      <div class="attribute-content" id="attribute">
+
+        <div class="attribute-container">
+          <h2 class="attr-heading">Traits</h2>
+          <div class="attr-sub">     
+          
+            <ul>
+                <li>Persistent</li>
+                <li>Reserved</li>
+                <li>Optimistic</li>
+                <li>Curious</li>
+            </ul>
+      </div>
+        </div>
+        <div class="division"></div>
+        <div class="fav-container">
+          <h2 class="attr-heading">Favourites</h2>
+          <div class="attr-sub">
+            
+            <ul>
+              <li>Movie: The Notebook</li>
+             
+              <li>Series: Scarlet Heart Ryeo</li>
+              <li>Cartoon: Spongebob</li>
+              <li>Dish: Pancit Canton</li>
+          </ul>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="gallery-content" id="gallery">
+
+        <div class="gallery-heading">My Photos</div>
+        <div class="img-container">
+            
+          <div class="row-1">
+            <div class="img pic1"></div>
+            <div class="img pic2"></div>
+            <div class="img pic3"></div>
+          </div>
+          <div class="row-2">
+            <div class="img pic4"></div>
+            <div class="img pic5"></div>
+            <div class="img pic6"></div>
+          </div>
+        
+        </div>
+        
+      </div>
+
+      <div class="contact-content" id="contact">
+        <div class="contact-sec-logo"><div class="logo-con-sec"></div></div>
+        <div class="contact-sec-heading">Contact Me</div>
+        <div class="contact-sec-socials">
+          <a href="https://www.facebook.com/lhenjoy.damian?mibextid=kFxxJD"><i class='bx bxl-facebook-circle'></i></a>
+          <a href="https://www.instagram.com/helenjoy_damian?igsh=OHR3dG82b282MXd3s"><i class='bx bxl-instagram'></i></a>
+          <a href="https://m.me/lhenjoy.damian"><i class='bx bxl-messenger'></i></a>
+          <a href="helenjoydamian12@gmail.com"><i class='bx bxl-gmail'></i></a>
+
+        </div>
+        <footer><span>&copy;</span>Copyright, Helen Joy Damian 2024</footer>
+      </div>
+    </div>
+    </section>
+    <script>function showTab(tabName) {
+      // Check if the clicked tab is already active
+      var selectedTabContent = document.getElementById(tabName);
+
+  
+      // Hide all tab contents
+      var tabContents = document.getElementsByClassName("active-tab-content");
+      for (var i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active-tab-content");
+      }
+  
+      // Hide all active links
+      var navLinks = document.getElementsByClassName("active-link");
+      for (var i = 0; i < navLinks.length; i++) {
+        navLinks[i].classList.remove("active-link");
+      }
+  
+      // Show the selected tab content
+      if (selectedTabContent) {
+        selectedTabContent.classList.add("active-tab-content");
+      }
+  
+      // Add active class to the clicked link
+      var clickedNavLink = document.querySelector('a[href="#' + tabName + '"]');
+      if (clickedNavLink) {
+        clickedNavLink.parentNode.classList.add("active-link");
+      }
+    }
+
+
+
+
+
+
+
+    </script>
+
+<script>
+ document.addEventListener('DOMContentLoaded', function() {
+    var sideNav = document.getElementById('sideNav');
+    var sideNavButton = document.getElementById('sideNavButton');
+
+    // Set the initial state of the sideNav
+    sideNav.style.left = '-130px';
+
+    sideNavButton.addEventListener('click', function() {
+        if (sideNav.style.left === '-130px') {
+            sideNav.style.left = '0px';
+          
+        } else {
+            sideNav.style.left = '-130px';
+            sideNavButton.textContent = '>'; // Change button text to '>' when the sideNav is closed
+        }
+    });
+});
+
+</script>
+
+
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
