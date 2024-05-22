@@ -30,23 +30,20 @@ function showTab(tabName) {
 
 
 
+  document.addEventListener('DOMContentLoaded', function() {
+    var sideNav = document.getElementById('sideNav');
+    var sideNavButton = document.getElementById('sideNavButton');
 
+    // Set the initial state of the sideNav
+    sideNav.style.left = '-130px';
 
-document.addEventListener('DOMContentLoaded', function() {
-  var sideNav = document.getElementById('sideNav');
-  var sideNavButton = document.getElementById('sideNavButton');
-
-  // Set the initial state of the sideNav
-  sideNav.style.left = '-130px';
-
-  sideNavButton.addEventListener('click', function() {
-      if (sideNav.style.left === '-130px') {
-          sideNav.style.left = '0px';
+    sideNavButton.addEventListener('click', function() {
+        if (sideNav.style.left === '-130px') {
+            sideNav.style.left = '0px';
         
-      } else {
-          sideNav.style.left = '-130px';
-          sideNavButton.textContent = '>'; // Change button text to '>' when the sideNav is closed
-      }
-  });
+        } else {
+            sideNav.style.left = '-130px';
+            sideNavButton.textContent = '>'; // Change button text to '>' when the sideNav is closed
+        }
+    });
 });
-
