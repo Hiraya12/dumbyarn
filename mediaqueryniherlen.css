@@ -552,4 +552,9 @@ text-align: center; /* Ensure text is centered */
             height: auto;
             padding: 5% 0 !important;
         }
+
+        .d-heading{
+            font-size: 20px !important;
+            width: 100%;
+        }
         }
